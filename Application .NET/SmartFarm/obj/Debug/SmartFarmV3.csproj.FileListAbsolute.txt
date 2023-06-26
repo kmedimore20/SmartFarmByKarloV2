@@ -1,0 +1,16 @@
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\SmartFarmV3.exe.config
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\SmartFarmV3.exe
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\SmartFarmV3.pdb
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\M2Mqtt.Net.dll
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\M2Mqtt.Net.pdb
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.csproj.AssemblyReference.cache
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.csproj.SuggestedBindingRedirects.cache
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.Form1.resources
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.Properties.Resources.resources
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.csproj.GenerateResource.cache
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.csproj.CoreCompileInputs.cache
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.csproj.CopyComplete
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.exe
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.pdb
+E:\Faks\3god\Zavrsni\SmartFarmV3\bin\Debug\MQTTnet.dll
+E:\Faks\3god\Zavrsni\SmartFarmV3\obj\Debug\SmartFarmV3.Sensor1Data.resources
