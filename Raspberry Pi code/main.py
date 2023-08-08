@@ -9,17 +9,21 @@ import mysql.connector as mariadb
 from datetime import date
 import datetime
 
+#Lights controll
+GPIO.setmode(GPIO.BCM)
+GPIO.setwarnings(False)
+relay_pin = 23
+GPIO.setup(relay_pin,GPIO.OUT)
 
 #MQTT
 MQTT_SERVER = "test.mosquitto.org"
 MQTT_TOPIC_TEMP = "SmartFarmKarlo/Temperatura"
 MQTT_TOPIC_HUM = "SmartFarmKarlo/Vlaga"
 MQTT_TOPIC_LIGHT = "SmartFarmKarlo/Svijetlo"
-
 MQTT_TOPIC_SEND_DATA = "SmartFarmKarlo/DataSet"
 
 #Databse
-mariadb_connection = mariadb.connect(user='#########', password='#########', database='#########', host='#########', port='#########')
+mariadb_connection = mariadb.connect(user='##########', password='##########', database='##########', host='##########', port='##########')
 cursor = mariadb_connection.cursor() 
 
 today = date.today()
@@ -118,6 +122,16 @@ def on_message(client, userdata, msg):
         if '~' in str(msg.payload):
             return
         
+        if(str(msg.payload) == "b'LightOn'"):
+            GPIO.output (relay_pin,GPIO.LOW)
+            print(str(msg.payload))
+            return
+        
+        if(str(msg.payload) == "b'LightOff'"):
+            GPIO.output (relay_pin,GPIO.HIGH)
+            print(str(msg.payload))
+            return
+        
         messageCounterTopic1 += 1
         lightMessage1 = str(msg.payload).replace("'", "").replace("b", "")
         if(lightMessage1 == "0"):
@@ -148,5 +162,3 @@ client.on_message = on_message
 client.connect(MQTT_SERVER)
 
 client.loop_forever()
-
-
